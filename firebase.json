@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/portfolio-kellie-higa/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+    ]
+  }
+}
