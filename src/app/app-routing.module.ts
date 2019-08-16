@@ -1,10 +1,15 @@
+import { AboutComponent } from './about/about.component';
+import { ResumeComponent } from './resume/resume.component';
+import { WorkComponent } from './work/work.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent}
+  { path: '', redirectTo: 'work', pathMatch: 'full' },
+  { path: 'work', component: WorkComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
