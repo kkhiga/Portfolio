@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+/** Global Styles **/
+
+// Default Font Configuration
+@import url("https://use.typekit.net/bbl7njd.css");
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+// Colors
+$terra-cotta: #ED6A5A;
+$snow: #FCFAFA;
+$english-green: #1A535C;
+$outer-space: #474954;
+$cadet-blue: #5CA4A9;
+
+body {
+    font-family: proxima-nova, sans-serif;
+    color: $outer-space;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-none {
+    background: none;
+    background-color: none;
+}
+
+.bg-terracotta {
+    background-color: $terra-cotta;
+}
+
+.bg-snow {
+    background-color: $snow;
+}
+
+.bg-english-green {
+    background-color: $english-green;
+}
+
+.bg-outer-space {
+    background-color: $outer-space;
+}
+
+.bg-cadet-blue {
+    background-color: $cadet-blue;
+}
+
+.text-terracotta {
+    color: $terra-cotta;
+}
+
+.text-snow {
+    color: $snow;
+}
+
+.text-english-green {
+    color: $english-green;
+}
+
+.text-outer-space {
+    color: $outer-space;
+}
+
+.text-cadet-blue {
+    color: $cadet-blue;
+}
+
+
