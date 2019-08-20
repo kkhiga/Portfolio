@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'portfolio-kellie-higa';
+  hamburgerHover = false;
 
   constructor(public router: Router) {}
 }

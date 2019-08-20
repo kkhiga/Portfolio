@@ -1,11 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <fa-icon [icon]="['fal','menu']"></fa-icon>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ml-auto text-uppercase font-weight-bold text-outer-space">
+    <a class="navbar-brand" href="#"></a>
+    <button (mouseenter)="hamburgerHover = true" (mouseleave)="hamburgerHover = false"
+      class="btn navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <div *ngIf="hamburgerHover; else bars">
+        <div class="animated fadeIn">
+          <small class="mr-2">yum!</small>
+          <fa-icon [icon]="['fal','hamburger']"></fa-icon>
+        </div>
+      </div>
+      <ng-template #bars>
+        <fa-icon [icon]="['fal','bars']"></fa-icon>
+      </ng-template>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ml-auto text-uppercase font-weight-bold text-outer-space">
         <a class="nav-item nav-link" routerLink="/work" routerLinkActive="active">
           <fa-icon [icon]="['far','folder-open']" class="mr-1"></fa-icon> Work
         </a>
@@ -18,17 +28,17 @@
         <a class="nav-item nav-link" routerLink="/photography" routerLinkActive="active">
           <fa-icon [icon]="['far','camera']" class="mr-1"></fa-icon> Photography
         </a>
-          </div>
       </div>
+    </div>
   </div>
 </nav>
 <div class="container mb-4">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-english-green display-3">Kellie Higa</h1>
-            <h2 class="text-outer-space">UX Engineer</h2>
-        </div>
+  <div class="row">
+    <div class="col">
+      <h1 class="text-english-green display-3">Kellie Higa</h1>
+      <h2 class="text-outer-space">UX Engineer</h2>
     </div>
+  </div>
 </div>
 <!-- Under Construction Messsage -->
 <div class="container mb-4">
@@ -49,7 +59,7 @@
   </div>
 </div>
 
-    <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 
 <div class="container my-4">
   <div class="row">
