@@ -6,9 +6,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ml-auto text-uppercase font-weight-bold text-outer-space">
-              <a class="nav-item nav-link" [ngClass]="{'active': (router.url == '/work')}" (click)="router.navigateByUrl('work')"><fa-icon [icon]="['far','folder-open']" class="mr-1"></fa-icon> Work</a>
-              <a class="nav-item nav-link" [ngClass]="{'active': (router.url == '/resume')}" (click)="router.navigateByUrl('resume')"><fa-icon [icon]="['far','history']" class="mr-1"></fa-icon> Resume</a>
-              <a class="nav-item nav-link" [ngClass]="{'active': (router.url == '/about')}" (click)="router.navigateByUrl('about')"><fa-icon [icon]="['far','user']" class="mr-1"></fa-icon> About</a>
+        <a class="nav-item nav-link" routerLink="/work" routerLinkActive="active">
+          <fa-icon [icon]="['far','folder-open']" class="mr-1"></fa-icon> Work
+        </a>
+        <a class="nav-item nav-link" routerLink="/resume" routerLinkActive="active">
+          <fa-icon [icon]="['far','history']" class="mr-1"></fa-icon> Resume
+        </a>
+        <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">
+          <fa-icon [icon]="['far','user']" class="mr-1"></fa-icon> About
+        </a>
+        <a class="nav-item nav-link" routerLink="/photography" routerLinkActive="active">
+          <fa-icon [icon]="['far','camera']" class="mr-1"></fa-icon> Photography
+        </a>
           </div>
       </div>
   </div>
