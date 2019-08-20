@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WorkComponent } from './work/work.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
+import { PhotographyComponent } from './photography/photography.component';
 
 library.add(fas, far, fal, fab);
 @NgModule({
@@ -23,7 +24,7 @@ library.add(fas, far, fal, fab);
     AppComponent,
     WorkComponent,
     ResumeComponent,
-    AboutComponent
+    PhotographyComponent
   ],
   imports: [
     BrowserModule,
